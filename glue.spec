@@ -29,6 +29,19 @@ BuildArch:      noarch
 A collection of glue to fix incompatibilities and packaging failings without taking-on the maintenance of the packages themselves.
 
 
+%package        php74-php-common
+Summary:        Fix dependency glitch in php74-php-common
+Group:          Development/Libraries
+Requires:       php74-php-common
+Provides:       php(language) = 7.4
+
+%description    php74-php-common
+Fix around missing php(language) reference and link to available provider.
+
+%files          php74-php-common
+
+
+
 %package        php-geshi
 Summary:        Fix dependency glitch in php-geshi
 Group:          Development/Libraries
